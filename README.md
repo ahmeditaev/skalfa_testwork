@@ -1,1 +1,1 @@
-[Open in browser](https://ahmeditaev.github.io/skalfa_testwork/app/index.html)
+[Open in browser](https://ahmeditaev.github.io/skalfa_testwork/app/index)
