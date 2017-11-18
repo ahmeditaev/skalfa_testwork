@@ -1,0 +1,37 @@
+%no-list
+  padding: 0
+  margin: 0
+  list-style: none
+%display-flex
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+%news-col
+  max-width: 145px
+  width: 100%
+%title-subitem-margin
+  margin-top: 9px
+  margin-bottom: 0
+  line-height: 14px
+%title-subitem-main
+  font-size: 12px
+  font-weight: bold
+  color: #202021
+  
+%description-news-margin
+  margin: 0
+  line-height: 14px
+  margin-bottom: 7px
+%description-news-main
+  font-size: 12px
+  color: #202021
+
+=toggleable-button
+  &::before
+    content: "\2630"
+    background: #5094f2
+    color: #ffffff
+    cursor: pointer
+    font-size: 35px
+    padding: 0 5px
+    border-radius: 3px

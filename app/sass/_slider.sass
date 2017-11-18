@@ -1,0 +1,66 @@
+.slider-block
+  position: relative
+  width: 100%
+  box-sizing: border-box
+  padding: 13px 11px 6px 11px
+  background: $colorPrimary
+  display: flex
+  flex-direction: column
+  +min-width-768
+    flex-direction: row
+    max-width: 670px
+.slider-for
+  width: 100%
+  +min-width-768
+    max-width: 529px
+  &__item
+    width: 100%
+    position: relative
+    +min-width-768
+      max-width: 523px
+    border: 3px solid #000000
+    &:focus
+      outline: none
+    img
+      width: 100%
+      &:focus
+        outline: none
+.slider-info
+  background: rgba(0, 0, 0, 0.75)
+  padding-top: 6px
+  position: absolute
+  bottom: 0
+  left: 0
+  &__text
+    color: #ffffff
+    font-size: 15px
+    padding-left: 143px
+    padding-right: 2px
+.breaking-news-label
+  display: inline-block
+  color: #ffffff
+  background: $colorSecondary
+  position: absolute
+  bottom: 0
+  left: 0
+  z-index: 1
+  padding: 4px 14px 4px 8px
+  font-size: 10px
+  font-weight: bold
+  text-transform: uppercase
+.slider-nav
+  margin-left: 12px
+  &__item
+    max-width: 107px
+    width: 100%
+    margin-bottom: 5px
+    &:last-child
+      margin-bottom: 0
+    &:focus
+      box-sizing: border-box
+      outline: none
+      border: 3px solid #ff0000
+    img
+      width: 100%
+      &:focus
+        outline: none

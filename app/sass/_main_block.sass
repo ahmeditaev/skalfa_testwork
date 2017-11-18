@@ -1,0 +1,108 @@
+//////////////world news block/////////////////
+.world-news
+  padding-bottom: 15px
+.title-wrapper
+  position: relative
+.btn-more
+  display: inline-block
+  position: absolute
+  top: 7px
+  right: 0px
+  color: #ffffff
+  text-decoration: none
+  text-transform: uppercase
+  background: $colorSecondary
+  padding: 0px 10px 0px 12px
+  font-size: 10px
+.title-item
+  border-bottom: 3px solid $colorSecondary
+  margin: 0 0 15px 2px
+  a
+    text-decoration: none
+    font-family: $fontFamilySecondary
+    font-size: 25px
+    color: $colorPrimary
+    letter-spacing: 1px
+    line-height: 21px
+    font-weight: 700
+.flex-wrap
+  display: flex
+  justify-content: space-between
+  .world-news__item
+    @extend %news-col
+.world-news-img
+  display: inline-block
+  width: 100%
+.title-subitem
+  @extend %title-subitem-margin
+  a
+    @extend %title-subitem-main
+.article-news
+  @extend %description-news-margin
+  a
+    @extend %description-news-main
+.btn-read-more
+  text-transform: uppercase
+  text-decoration: none
+  font-size: 10px
+  color: $colorSecondary
+  font-weight: bold
+
+//////////latest news/////////
+.gallery-wrap
+  flex-wrap: wrap
+.latest-news
+  padding-top: 18px
+  padding-bottom: 15px
+.latest-news__item
+  @extend %news-col
+.latest-news-img
+  display: inline-block
+  width: 100%
+////////gallery news////////
+.gallery-news
+  padding-top: 16px
+.gallery-news__item
+  @extend %news-col
+  margin-bottom: 6px
+.gallery-news-img
+  display: inline-block
+  width: 100%
+////////tech news///////////
+.tech-news
+  padding-top: 17px
+.tech-news-list
+  display: flex
+  flex-direction: column
+  +min-width-768
+    display: block
+  .row-wrap
+    justify-content: space-around
+    flex-direction: column
+    +min-width-768
+      justify-content: space-between
+      flex-direction: row
+    &:first-child .tech-news__item
+      background: url("../img/dash.png") 0 104px repeat-x
+.tech-news__item
+  width: 100%
+  +min-width-768
+    max-width: 221px
+  padding-bottom: 21px
+.title-subitem-technews
+  margin-top: 5px
+  a
+    font-size: 15px
+    line-height: 18px
+.by_john
+  a
+    display: inline-block
+    font-size: 11px
+    color: $colorPrimary
+    border-right: 1px solid #767676
+    padding: 0 9px 0 0
+    &:last-child
+      border-right: none
+      padding-left: 3px
+    span
+      color: $colorSecondary
